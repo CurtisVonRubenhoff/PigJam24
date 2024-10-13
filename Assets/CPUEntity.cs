@@ -4,6 +4,7 @@ namespace DefaultNamespace
 {
     public class CPUEntity: Entity
     {
+        //[SerializeField] private EnemyUI targetButton;
         public override void Activate()
         {
             base.Activate();

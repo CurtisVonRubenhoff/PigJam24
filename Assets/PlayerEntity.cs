@@ -8,12 +8,16 @@ namespace DefaultNamespace
 
         public UnityEvent<Ability> AbilitySelected;
         public UnityEvent<Entity> TargetSelected;
+
+        private BattleUI _battleUI;
+        
         public override void Activate()
         {
             base.Activate();
             
             AbilitySelected.AddListener(OnAbilitySelected);
-            
+            _battleUI =  FindObjectOfType<BattleUI>();
+            _battleUI.ShowPlayerActions(this);
         }
 
         public override void EndTurn()
@@ -26,6 +30,7 @@ namespace DefaultNamespace
             selectedAbility = i_ability;
             AbilitySelected.RemoveListener(OnAbilitySelected);
             TargetSelected.AddListener(OnTargetSelected);
+            _battleUI.HidePlayerActions(this);
         }
 
         private void OnTargetSelected(Entity i_target)

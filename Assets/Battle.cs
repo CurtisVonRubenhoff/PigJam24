@@ -13,6 +13,8 @@ public class Battle : MonoBehaviour
     [SerializeField] private List<Entity> _playerUnits = new List<Entity>();
     [SerializeField] private List<Entity> _cpuUnits = new List<Entity>();
 
+    private List<GameObject> _spawnedButtons;
+
     private int currentPlayerUnitIndex = 0;
     private int currentCpuUnitIndex = 0;
 
@@ -50,14 +52,14 @@ public class Battle : MonoBehaviour
     private void EnemyGoesFirst()
     {
         currentCpuUnitIndex = 0;
-        
+
         CpuTurn();
     }
 
     private void PlayerGoesFirst()
     {
         currentPlayerUnitIndex = 0;
-        
+
         PlayerTurn();
 
     }
@@ -65,13 +67,13 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void ApplyAbility(Entity attacker, Entity i_target, Ability i_ability)
     {
         var amount = i_ability.GetEffect();
-        
+
         i_target.TakeDamage(amount);
         attacker.EndTurn();
     }
@@ -108,6 +110,7 @@ public class Battle : MonoBehaviour
         {
             currentCpuUnitIndex = 0;
         }
+
         _cpuUnits[currentCpuUnitIndex].Activate();
     }
 
@@ -124,6 +127,7 @@ public class Battle : MonoBehaviour
             EndBattle();
             return;
         }
+
         _playerUnits[currentPlayerUnitIndex].Activate();
     }
 
@@ -134,7 +138,7 @@ public class Battle : MonoBehaviour
             Debug.LogError("Battle ain't around, buster.");
             return;
         }
-        
+
         Debug.Log($"{attacker.name} used {i_ability.AbilityName} on {i_target.name}");
         Instance.ApplyAbility(attacker, i_target, i_ability);
     }
@@ -143,4 +147,5 @@ public class Battle : MonoBehaviour
     {
         Instance.battleRunning = false;
     }
+
 }
