@@ -11,6 +11,8 @@ namespace DefaultNamespace
         public static UnityEvent<Entity> TargetSelected = new UnityEvent<Entity>();
 
         private BattleUI _battleUI;
+
+        public static UnityEvent<float> PlayerHealthUpdated = new UnityEvent<float>();
         
         public override void Activate()
         {
@@ -19,6 +21,13 @@ namespace DefaultNamespace
             AbilitySelected.AddListener(OnAbilitySelected);
             _battleUI =  FindObjectOfType<BattleUI>();
             _battleUI.ShowPlayerActions(this);
+        }
+
+        public override void TakeDamage(float i_damage)
+        {
+            base.TakeDamage(i_damage);
+            
+            PlayerHealthUpdated.Invoke(health);
         }
 
         public override void EndTurn()
