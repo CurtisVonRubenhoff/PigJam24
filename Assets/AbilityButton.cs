@@ -29,7 +29,7 @@ public class AbilityButton : MonoBehaviour
     {
         if (usingEntity is PlayerEntity playerEntity)
         {
-            playerEntity.AbilitySelected.Invoke(_ability);
+            PlayerEntity.AbilitySelected.Invoke(_ability);
         }
 }
 

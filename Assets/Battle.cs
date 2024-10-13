@@ -80,6 +80,8 @@ public class Battle : MonoBehaviour
 
     private void EndTurn(bool isCPU)
     {
+        var player = isCPU ? "CPU" : "Player";
+        Debug.Log($"{player} turn ended.");
         if (Instance.battleRunning)
         {
             if (isCPU)
@@ -106,7 +108,7 @@ public class Battle : MonoBehaviour
 
     private void CpuTurn()
     {
-        if (currentCpuUnitIndex > _cpuUnits.Count)
+        if (currentCpuUnitIndex >= _cpuUnits.Count)
         {
             currentCpuUnitIndex = 0;
         }
@@ -116,7 +118,7 @@ public class Battle : MonoBehaviour
 
     private void PlayerTurn()
     {
-        if (currentPlayerUnitIndex > _playerUnits.Count)
+        if (currentPlayerUnitIndex >= _playerUnits.Count)
         {
             currentPlayerUnitIndex = 0;
         }
@@ -145,6 +147,7 @@ public class Battle : MonoBehaviour
 
     public static void EndBattle()
     {
+        Debug.Log("EndBattle message Received");
         Instance.battleRunning = false;
     }
 

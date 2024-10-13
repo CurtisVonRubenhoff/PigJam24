@@ -22,11 +22,9 @@ namespace DefaultNamespace
 
         public void HidePlayerActions(PlayerEntity i_player)
         {
-            for (int i = i_player.Abilities.Count; i > 0; i--)
+            foreach (var ability in _spawnedButtons)
             {
-                var button = _spawnedButtons[i];
-                _spawnedButtons.Remove(button);
-                Destroy(button);
+               ability.SetActive(false);
             }
         }
     }

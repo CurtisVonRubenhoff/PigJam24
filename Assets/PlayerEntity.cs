@@ -1,4 +1,5 @@
-﻿using UnityEngine.Events;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace DefaultNamespace
 {
@@ -6,8 +7,8 @@ namespace DefaultNamespace
     {
         private Ability selectedAbility;
 
-        public UnityEvent<Ability> AbilitySelected;
-        public UnityEvent<Entity> TargetSelected;
+        public static UnityEvent<Ability> AbilitySelected = new UnityEvent<Ability>();
+        public static UnityEvent<Entity> TargetSelected = new UnityEvent<Entity>();
 
         private BattleUI _battleUI;
         
@@ -22,15 +23,16 @@ namespace DefaultNamespace
 
         public override void EndTurn()
         {
-            Battle.EndUnitTurn(true);
+            Battle.EndUnitTurn(false);
         }
 
         public void OnAbilitySelected(Ability i_ability)
         {
+            Debug.Log($"Player Selected {i_ability.AbilityName}");
             selectedAbility = i_ability;
+            _battleUI.HidePlayerActions(this);
             AbilitySelected.RemoveListener(OnAbilitySelected);
             TargetSelected.AddListener(OnTargetSelected);
-            _battleUI.HidePlayerActions(this);
         }
 
         private void OnTargetSelected(Entity i_target)
