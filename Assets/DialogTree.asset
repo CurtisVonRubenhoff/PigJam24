@@ -266,7 +266,7 @@ MonoBehaviour:
     x: 51281
     y: 50178
     width: 200
-    height: 186
+    height: 182
   nodeTitle: 
   children: []
   conditions: []
@@ -364,7 +364,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 51955
-    y: 50084
+    y: 50083
     width: 200
     height: 146
   nodeTitle: 
