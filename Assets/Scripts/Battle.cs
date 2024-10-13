@@ -13,6 +13,7 @@ public class Battle : MonoBehaviour
 
     [SerializeField] private List<Entity> _playerUnits = new List<Entity>();
     [SerializeField] private List<Entity> _cpuUnits = new List<Entity>();
+    [SerializeField] private GameObject EnemyRow;
 
     private List<GameObject> _spawnedButtons;
 
@@ -45,6 +46,7 @@ public class Battle : MonoBehaviour
 
     private void BeginBattle()
     {
+        EnemyRow.SetActive(true);
         var coinFlip = Random.Range(0, 1) > 0.5f;
 
         battleRunning = true;

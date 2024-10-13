@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3317658955850387874}
   - component: {fileID: 70093574166937128}
   - component: {fileID: 484458014177944715}
+  - component: {fileID: 5848023066271568019}
   m_Layer: 5
   m_Name: ZombiePigUI
   m_TagString: Untagged
@@ -119,6 +120,32 @@ MonoBehaviour:
   button: {fileID: 70093574166937128}
   enemy: {fileID: 0}
   enemyHealth: {fileID: 1899471811706403805}
+--- !u!114 &5848023066271568019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696765340761069466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5499b5b5eee24f1ba1bee3140dddfa17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  name: Zombie PIG
+  strength: 1
+  wisdom: 1
+  endurance: 1
+  luck: 1
+  _abilities:
+  - AbilityName: Attack
+    _effects:
+    - _effectTarget: 0
+      _potency: 1
+  EnemyHealthUpdated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &808085628342561384
 GameObject:
   m_ObjectHideFlags: 0
