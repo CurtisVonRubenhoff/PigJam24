@@ -18,6 +18,8 @@ namespace DefaultNamespace
         {
             base.Activate();
             
+            BattleUI.BattleTextEvent.Invoke("");
+            
             AbilitySelected.AddListener(OnAbilitySelected);
             _battleUI =  FindObjectOfType<BattleUI>();
             _battleUI.ShowPlayerActions(this);

@@ -76,14 +76,23 @@ public class Battle : MonoBehaviour
         var amount = i_ability.GetEffect();
 
         i_target.TakeDamage(amount);
+        var enemyDied = i_target.health < 1;
+        var deathMessage = (enemyDied) ? $"{i_target.name} dies!" : "";
+        BattleUI.BattleTextEvent.Invoke($"{attacker.name} used {i_ability.AbilityName} on {i_target.name}. {amount} damage. {deathMessage}");
+        StartCoroutine(EndTurnAfterDelay(attacker));
+    }
+
+    private IEnumerator EndTurnAfterDelay(Entity attacker)
+    {
+        yield return new WaitForSeconds(2.0f);
         attacker.EndTurn();
     }
 
     private void EndTurn(bool isCPU)
     {
         var player = isCPU ? "CPU" : "Player";
-        BattleUI.BattleTextEvent.Invoke($"{player} turn ended.");
-        if (Instance.battleRunning)
+        //BattleUI.BattleTextEvent.Invoke($"{player} turn ended.");
+        if (!ShouldBattleEnd())
         {
             if (isCPU)
             {
@@ -98,8 +107,13 @@ public class Battle : MonoBehaviour
         }
         else
         {
-            Debug.Log("Battle Ended");
+            EndBattle();
         }
+    }
+
+    private bool ShouldBattleEnd()
+    {
+        return FindObjectsOfType<CPUEntity>().All((cpu) => cpu.health < 1);
     }
 
     public static void EndUnitTurn(bool isCPU)
@@ -114,15 +128,23 @@ public class Battle : MonoBehaviour
             currentCpuUnitIndex = 0;
         }
 
-        var AllUnitsDead = _cpuUnits.All(unit => unit.health < 1);
+        var unit = _cpuUnits[currentCpuUnitIndex];
 
-        if (AllUnitsDead)
+        if (unit.health > 0)
         {
-            EndBattle();
-            return;
+            _cpuUnits[currentCpuUnitIndex].Activate();
         }
-
-        _cpuUnits[currentCpuUnitIndex].Activate();
+        else
+        {
+            if (ShouldBattleEnd())
+            {
+                EndBattle();
+            }
+            else
+            {
+                _cpuUnits.First((unit) => unit.health > 0).Activate();
+            }
+        }
     }
 
     private void PlayerTurn()
@@ -150,13 +172,13 @@ public class Battle : MonoBehaviour
             return;
         }
 
-        Debug.Log($"{attacker.name} used {i_ability.AbilityName} on {i_target.name}");
         Instance.ApplyAbility(attacker, i_target, i_ability);
     }
 
     public static void EndBattle()
     {
         Debug.Log("EndBattle message Received");
+        BattleUI.BattleTextEvent.Invoke("YOU WIN");
         Instance.battleRunning = false;
     }
 

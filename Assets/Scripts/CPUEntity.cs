@@ -12,7 +12,6 @@ namespace DefaultNamespace
         {
             base.Activate();
             var abilityIndex = _abilities.GetRandomIndex();
-            Debug.Log(abilityIndex);
             var ability = _abilities[abilityIndex];
             var playerUnits = Battle.PlayerUnits;
 

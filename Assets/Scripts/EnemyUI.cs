@@ -24,12 +24,13 @@ public class EnemyUI : MonoBehaviour
 
     private void OnHealthUpdated(float arg0)
     {
-        if (arg0 > 1)
+        if (arg0 >= 1)
         {
             enemyHealth.text = $"{arg0}";
         }
         else
         {
+            button.enabled = false;
             enemyHealth.text = "DEAD";
         }
     }
