@@ -1,0 +1,331 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9221273670016397826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 17abd3a0-84c3-403e-931d-13a6960ce3c0
+  rect:
+    serializedVersion: 2
+    x: 50511
+    y: 50160
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -7172595627679099243}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: NO MATTER OF THEIR MANY MAGICAL POWERS
+--- !u!114 &-8384866161542186431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 25ef5894-cc53-4d82-9d9b-b0547acde3b4
+  rect:
+    serializedVersion: 2
+    x: 51348
+    y: 50074
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2708650567555946242}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: WHAT
+--- !u!114 &-7879128716380573145
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: WIN
+  children:
+  - {fileID: 5604062153186125005}
+  _uniqueId: ca7fa13e-93ba-4947-babc-e00e8b98684c
+--- !u!114 &-7172595627679099243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 437aae5f-b22e-4839-a96e-8d7fef5a1e3f
+  rect:
+    serializedVersion: 2
+    x: 50771
+    y: 50160
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -7879128716380573145}
+  - {fileID: -415165918137980175}
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: THE UPCOMING FIGHT WILL BE VERY DIFFICULT AND YOU MAY GET KILLED
+--- !u!114 &-1849512049304357400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 8df2cf74-2186-4373-b4e6-7b38e6944f71
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: 1467195552994553116}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &-415165918137980175
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: NAP
+  children:
+  - {fileID: 7009655077004206028}
+  _uniqueId: a126f7d1-b7cf-4955-8799-c802add08803
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: SpotDialog
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -1849512049304357400}
+  - {fileID: 1467195552994553116}
+  - {fileID: -9221273670016397826}
+  - {fileID: -7172595627679099243}
+  - {fileID: 5604062153186125005}
+  - {fileID: 7009655077004206028}
+  - {fileID: -8384866161542186431}
+  - {fileID: 6301434954493504401}
+  - {fileID: 2708650567555946242}
+  root: {fileID: -1849512049304357400}
+  scrollPosition: {x: 50989.5, y: 49973.5}
+--- !u!114 &1467195552994553116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 43ab1ca7-c7f8-455f-99a1-7b897b5345d4
+  rect:
+    serializedVersion: 2
+    x: 50233
+    y: 50155
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -9221273670016397826}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: "YOU HAVE ACHIEVED A FIRST VICTORY OVER THE NASTY TUBERCULOSIS PIGS BUT
+    YOU\u2019VE GOT TO FIGHT"
+--- !u!114 &2708650567555946242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: e8c448f1-aaf1-4366-a6f8-5b1c779fbdff
+  rect:
+    serializedVersion: 2
+    x: 51700
+    y: 50245
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: 5877263691567806760}
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: WAR WILL BE FOUGHT
+--- !u!114 &5604062153186125005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 351cc85a-ed21-4782-9ae1-55de1df2bcbe
+  rect:
+    serializedVersion: 2
+    x: 51086
+    y: 50081
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -8384866161542186431}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: e71fe099f5ce0b541be4ff3f228bfcc5, type: 2}
+  audio: {fileID: 0}
+  dialogue: "DESTROYING MY PIG WON\u2019T WIN, LET THE BATTLE BEGIN"
+--- !u!114 &5877263691567806760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74a4201d7a943c783cbf3aae598ab03, type: 3}
+  m_Name: CustomAction
+  m_EditorClassIdentifier: 
+  _title: CustomAction
+  _uniqueId: 0d3db347-3b49-484c-ba62-ff9120c67576
+--- !u!114 &6301434954493504401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a76f6d5d-3c0e-4136-8e47-fe8a84e6ddcf
+  rect:
+    serializedVersion: 2
+    x: 51357
+    y: 50304
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2708650567555946242}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: HOW MANY FATHERS ARE THERE TODAY
+--- !u!114 &7009655077004206028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 22a537e9-bb17-47b9-b705-2bedb0e63ba5
+  rect:
+    serializedVersion: 2
+    x: 51075
+    y: 50293
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 6301434954493504401}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: e71fe099f5ce0b541be4ff3f228bfcc5, type: 2}
+  audio: {fileID: 0}
+  dialogue: COULD I ENJOY A MINOR NAP TO RECEIVE MY INJURIES BEFORE I FIGHT AGAIN

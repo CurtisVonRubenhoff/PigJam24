@@ -379,10 +379,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5023872218976516858, guid: dca3be08124aea7439040d953c0f3706, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5313645313980578553, guid: dca3be08124aea7439040d953c0f3706, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -395,6 +391,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BattleUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8108068193986020723, guid: dca3be08124aea7439040d953c0f3706, type: 3}
+      propertyPath: _cpuUnits.Array.data[0]
+      value: 
+      objectReference: {fileID: 970552326}
+    - target: {fileID: 8108068193986020723, guid: dca3be08124aea7439040d953c0f3706, type: 3}
+      propertyPath: _cpuUnits.Array.data[1]
+      value: 
+      objectReference: {fileID: 1332535011}
+    - target: {fileID: 8108068193986020723, guid: dca3be08124aea7439040d953c0f3706, type: 3}
+      propertyPath: _playerUnits.Array.data[0]
+      value: 
+      objectReference: {fileID: 417705921}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -404,65 +412,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7731914886964458273, guid: dca3be08124aea7439040d953c0f3706, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1332535010}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7376166576474310793, guid: dca3be08124aea7439040d953c0f3706, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 417705922}
-    - targetCorrespondingSourceObject: {fileID: 7376166576474310793, guid: dca3be08124aea7439040d953c0f3706, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 417705921}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dca3be08124aea7439040d953c0f3706, type: 3}
---- !u!1 &417705913 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7376166576474310793, guid: dca3be08124aea7439040d953c0f3706, type: 3}
+--- !u!114 &417705921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8554770307832740804, guid: dca3be08124aea7439040d953c0f3706, type: 3}
   m_PrefabInstance: {fileID: 417705912}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &417705921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417705913}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53ccb78c8080448fb4101e972768e138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  name: Little Jerrald
-  strength: 1
-  wisdom: 1
-  endurance: 1
-  luck: 1
-  _abilities:
-  - AbilityName: Attack
-    _effects:
-    - _effectTarget: 0
-      _potency: 2
---- !u!114 &417705922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417705913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26eb3100f58e6b241b007688561fe2e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerUnits:
-  - {fileID: 417705921}
-  _cpuUnits:
-  - {fileID: 970552326}
-  - {fileID: 1332535011}
-  EnemyRow: {fileID: 863897903}
---- !u!1 &863897903 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5023872218976516858, guid: dca3be08124aea7439040d953c0f3706, type: 3}
-  m_PrefabInstance: {fileID: 417705912}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &863897904 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7731914886964458273, guid: dca3be08124aea7439040d953c0f3706, type: 3}

@@ -439,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7731914886964458273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -635,6 +635,8 @@ GameObject:
   - component: {fileID: 8721976716130681039}
   - component: {fileID: 7872080285765457245}
   - component: {fileID: 7280535419212339877}
+  - component: {fileID: 8108068193986020723}
+  - component: {fileID: 8554770307832740804}
   m_Layer: 5
   m_Name: BattleUI
   m_TagString: Untagged
@@ -749,6 +751,47 @@ MonoBehaviour:
   _speakerNameText: {fileID: 3464502010716319011}
   _mainTextBox: {fileID: 1871196464825056396}
   _writer: {fileID: 1088485018210947183}
+--- !u!114 &8108068193986020723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7376166576474310793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26eb3100f58e6b241b007688561fe2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerUnits:
+  - {fileID: 0}
+  _cpuUnits:
+  - {fileID: 0}
+  - {fileID: 0}
+  EnemyRow: {fileID: 5023872218976516858}
+--- !u!114 &8554770307832740804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7376166576474310793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53ccb78c8080448fb4101e972768e138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  name: Little Jerrald
+  strength: 1
+  wisdom: 1
+  endurance: 1
+  luck: 1
+  _abilities:
+  - AbilityName: Attack
+    _effects:
+    - _effectTarget: 0
+      _potency: 2
 --- !u!1 &8664351749472855346
 GameObject:
   m_ObjectHideFlags: 0
