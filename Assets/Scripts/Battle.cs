@@ -82,7 +82,7 @@ public class Battle : MonoBehaviour
     private void EndTurn(bool isCPU)
     {
         var player = isCPU ? "CPU" : "Player";
-        Debug.Log($"{player} turn ended.");
+        BattleUI.BattleTextEvent.Invoke($"{player} turn ended.");
         if (Instance.battleRunning)
         {
             if (isCPU)
