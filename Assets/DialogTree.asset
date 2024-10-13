@@ -25,7 +25,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: WAR WILL BE FOUGHT
 --- !u!114 &-8782181449364302304
@@ -54,7 +54,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
   audio: {fileID: 0}
   dialogue: YOUR DOUBT WILL SHIT EVERYONE
 --- !u!114 &-5777093702349599826
@@ -83,7 +83,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: I WILL UTTERLY ANNIHILATE THE PIG TRADE AND BRING HEALTH AND PROSPERITY
     TO MY PEOPLE ONCE MORE
@@ -113,7 +113,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: I AM AN ORDINARY FARMER HOW DO I PULL OFF THE MYSTERY OF CHASING PIGS
 --- !u!114 &-2006563979853006121
@@ -160,7 +160,7 @@ MonoBehaviour:
   _uniqueId: eae2548e-e2c3-4ed6-8dd4-1ef2b35f927d
   rect:
     serializedVersion: 2
-    x: 50437
+    x: 50436
     y: 50174
     width: 200
     height: 146
@@ -171,7 +171,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: 'FLYING ZOMBIES ZOMBIES ATTACK EARTH
 
@@ -202,7 +202,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: 'FLYING ZOMBIE PIG
 
@@ -232,7 +232,7 @@ MonoBehaviour:
   - {fileID: -8782181449364302304}
   - {fileID: -8806249024533015929}
   root: {fileID: 5994092890790321594}
-  scrollPosition: {x: 51292.5, y: 49986}
+  scrollPosition: {x: 51842.5, y: 49920}
 --- !u!114 &27864986275672981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   enterActions: []
   exitActions: []
   choices: []
-  actor: {fileID: 0}
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: "THEY HAVE AMAZING AND INTRINSIC QUALITIES\r"
 --- !u!114 &5994092890790321594

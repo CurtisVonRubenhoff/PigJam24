@@ -36,6 +36,15 @@ public class Battle : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    public static void StartBattle()
+    {
+        Instance.BeginBattle();
+    }
+
+    private void BeginBattle()
+    {
         var coinFlip = Random.Range(0, 1) > 0.5f;
 
         battleRunning = true;
@@ -50,7 +59,7 @@ public class Battle : MonoBehaviour
         }
     }
 
-    private void EnemyGoesFirst()
+private void EnemyGoesFirst()
     {
         currentCpuUnitIndex = 0;
 

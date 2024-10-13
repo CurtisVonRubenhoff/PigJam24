@@ -12,7 +12,7 @@ namespace Source.UI
 {
     public class DialogController : Singleton<DialogController>
     {
-        [SerializeField] private CanvasGroup _dialogPanelGroup;
+        //[SerializeField] private CanvasGroup _dialogPanelGroup;
         [SerializeField] private DialogueGraph _debugGraph;
         [SerializeField] private DialogChoiceButton _dialogChoiceButtonPrefab;
         [SerializeField] private Transform _choiceButtonParent;
@@ -56,7 +56,8 @@ namespace Source.UI
         private void HandleEnd()
         {
             _dialogActive = false;
-            _dialogPanelGroup.alpha = 0;
+            _portraitUI.enabled = false;
+            _speakerNameText.enabled = false;
         }
 
         private void HandleSpeak(IActor actor, string message)
@@ -71,7 +72,17 @@ namespace Source.UI
             }
 
             _speakerNameText.text = actor.DisplayName;
+            _speakerNameText.enabled = true;
             _mainTextBox.text = message;
+            if (actor.Portrait != null)
+            {
+                _portraitUI.sprite = actor.Portrait;
+                _portraitUI.enabled = true;
+            }
+            else
+            {
+                _portraitUI.enabled = false;
+            }
         }
 
         private void HandleChoice(IActor actor, string message, List<IChoice> choices)
@@ -89,7 +100,7 @@ namespace Source.UI
 
         private void HandleBegin()
         {
-            _dialogPanelGroup.alpha = 1;
+            //_dialogPanelGroup.alpha = 1;
             _dialogActive = true;
         }
 
@@ -111,7 +122,10 @@ namespace Source.UI
 // Update is called once per frame
         void Update()
         {
-        
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                OnSubmit();
+            }
         }
     }
 }
