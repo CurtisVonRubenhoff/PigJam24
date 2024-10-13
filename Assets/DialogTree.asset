@@ -23,7 +23,8 @@ MonoBehaviour:
   children: []
   conditions: []
   enterActions: []
-  exitActions: []
+  exitActions:
+  - {fileID: -3076324518714552531}
   choices: []
   actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
@@ -116,6 +117,20 @@ MonoBehaviour:
   actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
   audio: {fileID: 0}
   dialogue: I AM AN ORDINARY FARMER HOW DO I PULL OFF THE MYSTERY OF CHASING PIGS
+--- !u!114 &-3076324518714552531
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74a4201d7a943c783cbf3aae598ab03, type: 3}
+  m_Name: CustomAction
+  m_EditorClassIdentifier: 
+  _title: CustomAction
+  _uniqueId: c3e18458-7210-4031-b341-bf74cf7ac9fd
 --- !u!114 &-2006563979853006121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +247,7 @@ MonoBehaviour:
   - {fileID: -8782181449364302304}
   - {fileID: -8806249024533015929}
   root: {fileID: 5994092890790321594}
-  scrollPosition: {x: 51842.5, y: 49920}
+  scrollPosition: {x: 51842.5, y: 50040}
 --- !u!114 &27864986275672981
 MonoBehaviour:
   m_ObjectHideFlags: 0
