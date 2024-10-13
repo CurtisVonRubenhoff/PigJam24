@@ -17,7 +17,7 @@ public class Entity : MonoBehaviour
 
     public List<Ability> Abilities => _abilities;
 
-    public void TakeDamage(float i_damage)
+    public virtual void TakeDamage(float i_damage)
     {
         Debug.Log($"{name} takes {i_damage} damage");
         health -= i_damage;
