@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8882816512654509893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 3f7878f7-9b87-4708-93a9-e27fe609dd9d
+  rect:
+    serializedVersion: 2
+    x: 51156
+    y: 50132
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 1978563864377985710}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: Curtis Cummings - Programming
+--- !u!114 &-8570362564546021931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 4fa0d645-2256-484c-80c1-287a6e489f07
+  rect:
+    serializedVersion: 2
+    x: 50627
+    y: 50149
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 2735118200738309506}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Barron Burmaster - Writing
+
+'
+--- !u!114 &-7567130164649904614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: bd7d1631-ebad-482f-b250-63d4bccef149
+  rect:
+    serializedVersion: 2
+    x: 50091
+    y: 50157
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5890633855408938997}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: NOT JUST THE BIGGEST GRANDFATHER PIG, WHO WAS HUGE, BUT ALL PIGS ARE
+    NOW DEAD, DISEASE IS NO MORE AND PEOPLE LIVE IN SPACE
+--- !u!114 &-5890633855408938997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: c22bdc91-ca91-474a-be70-48086136b46d
+  rect:
+    serializedVersion: 2
+    x: 50372
+    y: 50147
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -8570362564546021931}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'Bethany McCurdy - Art
+
+'
+--- !u!114 &-103029918007308567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: bf0569ce-8f6c-47b4-b7c9-a80e7ef48f39
+  rect:
+    serializedVersion: 2
+    x: 49935
+    y: 50210
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -7567130164649904614}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: Ending
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -103029918007308567}
+  - {fileID: -7567130164649904614}
+  - {fileID: -5890633855408938997}
+  - {fileID: -8570362564546021931}
+  - {fileID: 2735118200738309506}
+  - {fileID: -8882816512654509893}
+  - {fileID: 1978563864377985710}
+  - {fileID: 4352961255534382552}
+  root: {fileID: -103029918007308567}
+  scrollPosition: {x: 51330.5, y: 49859.5}
+--- !u!114 &1978563864377985710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 86635916-cabf-4660-a1e4-65ba52212c5a
+  rect:
+    serializedVersion: 2
+    x: 51414
+    y: 50132
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 4352961255534382552}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: Made for NOGD PIG JAM 2024
+--- !u!114 &2735118200738309506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 23a6ba62-9b0a-4c37-86ad-d302fbc7970d
+  rect:
+    serializedVersion: 2
+    x: 50901
+    y: 50140
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -8882816512654509893}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: Martin Breen - Level and Enemy Design
+--- !u!114 &4352961255534382552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: db53c10a-9230-45dd-928f-0d601e784013
+  rect:
+    serializedVersion: 2
+    x: 51670
+    y: 50119
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: 'FIN
+
+'
