@@ -1,0 +1,332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5952083336942115751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: b15078f9-e0ca-41f7-a9bb-9bcee63b0e29
+  rect:
+    serializedVersion: 2
+    x: 50719
+    y: 50133
+    width: 200
+    height: 186
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices:
+  - {fileID: -2647312688621814864}
+  - {fileID: 4193999591227952654}
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: NEXT PIG WILL THE LARGEST PIG, MOST FOUL SMELLS
+--- !u!114 &-5368114539989397763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 64dadb09-390a-465a-815c-a483fd030107
+  rect:
+    serializedVersion: 2
+    x: 51676
+    y: 50151
+    width: 200
+    height: 146
+  nodeTitle: 
+  children: []
+  conditions: []
+  enterActions: []
+  exitActions:
+  - {fileID: -1435409170739488157}
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: WAR WILL BE FOUGHT
+--- !u!114 &-2853323151159311272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 98d429de-fd92-435b-830b-2d94d8577793
+  rect:
+    serializedVersion: 2
+    x: 51313
+    y: 50247
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5368114539989397763}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: YOUR WIF
+--- !u!114 &-2647312688621814864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: I DO NOT
+  children:
+  - {fileID: 8679514924257319040}
+  _uniqueId: b02d9e7f-8dcd-4f99-a853-a726722289b0
+--- !u!114 &-2091732733328016316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 99d59b87-50eb-431c-8284-e24cf63db21a
+  rect:
+    serializedVersion: 2
+    x: 50198
+    y: 50148
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 5755420589362546845}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: 0d0b30797825db34e8ad6b892237daad, type: 2}
+  audio: {fileID: 0}
+  dialogue: NOW A CANCER PIG WITH SWINE FLU IS DYING YOU WILL HAVE TO DEAL WITH GRANDMA
+    PIG
+--- !u!114 &-1435409170739488157
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74a4201d7a943c783cbf3aae598ab03, type: 3}
+  m_Name: CustomAction
+  m_EditorClassIdentifier: 
+  _title: CustomAction
+  _uniqueId: 301d6d9f-5bd8-4e88-9336-a4d065c349e6
+--- !u!114 &-228453393558182675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 774cd54e-8355-4a8a-baea-ac31a245d7b2
+  rect:
+    serializedVersion: 2
+    x: 51017
+    y: 50268
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -2853323151159311272}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: e71fe099f5ce0b541be4ff3f228bfcc5, type: 2}
+  audio: {fileID: 0}
+  dialogue: CAN NO ONE BEAR THE BURDEN OF THE PEOPLE
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35851dfd8754a74b333944d50d05bbd, type: 3}
+  m_Name: SpaceDialog
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: 3457835430664620674}
+  - {fileID: -2091732733328016316}
+  - {fileID: 5755420589362546845}
+  - {fileID: -5952083336942115751}
+  - {fileID: 8679514924257319040}
+  - {fileID: -228453393558182675}
+  - {fileID: 3582815209065133540}
+  - {fileID: -2853323151159311272}
+  - {fileID: -5368114539989397763}
+  root: {fileID: 3457835430664620674}
+  scrollPosition: {x: 50923.5, y: 49885.5}
+--- !u!114 &3457835430664620674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8d0566afe4d5fa9596c80df966df6, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  _uniqueId: 77e4207d-a698-428a-8e70-c2d629bba873
+  rect:
+    serializedVersion: 2
+    x: 50050
+    y: 50200
+    width: 100
+    height: 57
+  nodeTitle: 
+  children:
+  - {fileID: -2091732733328016316}
+  conditions: []
+  enterActions: []
+  exitActions: []
+--- !u!114 &3582815209065133540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: a37a5ca9-cc03-435a-a33d-9850d2b36379
+  rect:
+    serializedVersion: 2
+    x: 51326
+    y: 50024
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5368114539989397763}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: OH YES
+--- !u!114 &4193999591227952654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb407621a43446dac370b409a9ddc29, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: 
+  text: CAN NO ONE
+  children:
+  - {fileID: -228453393558182675}
+  _uniqueId: 47848885-34b6-4a79-b70f-f6df3a5d1fe2
+--- !u!114 &5755420589362546845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: 82807aa5-f8e8-48c9-8c49-fa5c68e44a01
+  rect:
+    serializedVersion: 2
+    x: 50469
+    y: 50154
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: -5952083336942115751}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: a7aab8b76e00dec4fb58a284de4f6558, type: 2}
+  audio: {fileID: 0}
+  dialogue: "YOU\u2019VE LEARNED A LOT OF MIDDLE-CLASS PIGS, OR YOU\u2019RE BRAVE
+    ENOUGH TO SAVE THE WORLD"
+--- !u!114 &8679514924257319040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f157564dbc846468ec0ac2b6f7d545e, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _uniqueId: eeedf755-01e1-43f4-af7a-aa1acfb16ab4
+  rect:
+    serializedVersion: 2
+    x: 51010
+    y: 50009
+    width: 200
+    height: 146
+  nodeTitle: 
+  children:
+  - {fileID: 3582815209065133540}
+  conditions: []
+  enterActions: []
+  exitActions: []
+  choices: []
+  actor: {fileID: 11400000, guid: e71fe099f5ce0b541be4ff3f228bfcc5, type: 2}
+  audio: {fileID: 0}
+  dialogue: ' I DO NOT THE BIG THE PIG IS, HE SHALL FALL BEFORE MY MIGHTY SALAM'

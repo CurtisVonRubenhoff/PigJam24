@@ -510,7 +510,7 @@ PrefabInstance:
     - target: {fileID: 7280535419212339877, guid: dca3be08124aea7439040d953c0f3706, type: 3}
       propertyPath: _debugGraph
       value: 
-      objectReference: {fileID: 11400000, guid: e9e29f013bfbb33449a611722190ab8d, type: 2}
+      objectReference: {fileID: 11400000, guid: baefc9fa6d1d4e7478d6e724717aef67, type: 2}
     - target: {fileID: 7280535419212339877, guid: dca3be08124aea7439040d953c0f3706, type: 3}
       propertyPath: _speakerNameText
       value: 
