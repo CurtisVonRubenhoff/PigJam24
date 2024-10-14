@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 70093574166937128}
-  enemy: {fileID: 0}
+  enemy: {fileID: 5848023066271568019}
   enemyHealth: {fileID: 1899471811706403805}
 --- !u!114 &5848023066271568019
 MonoBehaviour:
