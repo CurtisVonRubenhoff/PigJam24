@@ -516,6 +516,10 @@ PrefabInstance:
       value: BattleUI
       objectReference: {fileID: 0}
     - target: {fileID: 8108068193986020723, guid: dca3be08124aea7439040d953c0f3706, type: 3}
+      propertyPath: NextScene
+      value: Farm 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108068193986020723, guid: dca3be08124aea7439040d953c0f3706, type: 3}
       propertyPath: _cpuUnits.Array.size
       value: 2
       objectReference: {fileID: 0}

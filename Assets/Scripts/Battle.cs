@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class Battle : MonoBehaviour
 {
@@ -14,6 +17,7 @@ public class Battle : MonoBehaviour
     [SerializeField] private List<Entity> _playerUnits = new List<Entity>();
     [SerializeField] private List<Entity> _cpuUnits = new List<Entity>();
     [SerializeField] private GameObject EnemyRow;
+    [SerializeField] private string NextScene;
 
     private List<GameObject> _spawnedButtons;
 
@@ -37,6 +41,11 @@ public class Battle : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    private void OnDestroy()
+    {
+        Instance = null;
     }
 
     public static void StartBattle()
@@ -191,6 +200,8 @@ private void EnemyGoesFirst()
         Debug.Log("EndBattle message Received");
         BattleUI.BattleTextEvent.Invoke("YOU WIN");
         Instance.battleRunning = false;
+
+        SceneManager.LoadScene(Instance.NextScene);
     }
 
 }
