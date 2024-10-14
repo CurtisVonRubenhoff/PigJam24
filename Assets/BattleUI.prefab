@@ -518,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -397.77, y: 0.00007629}
+  m_AnchoredPosition: {x: 250, y: 0.00007629}
   m_SizeDelta: {x: 795.53, y: 302.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5662211131831071799
@@ -769,6 +769,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   EnemyRow: {fileID: 5023872218976516858}
+  NextScene: 
 --- !u!114 &8554770307832740804
 MonoBehaviour:
   m_ObjectHideFlags: 0
